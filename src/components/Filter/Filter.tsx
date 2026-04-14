@@ -6,7 +6,6 @@ import { searchedFilterStatus } from '../../features/filter';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import './Filter.scss';
 
-
 const sortOptions = [
   { label: 'Newest', value: 'age' },
   { label: 'Alphabetically', value: 'title' },
@@ -37,12 +36,14 @@ export const Filter: React.FC = () => {
 
   const getLabelFromValue = (value: SortValue | null): SortLabel => {
     const found = sortOptions.find(opt => opt.value === value);
+
     return found ? found.label : 'Newest';
   };
 
   useEffect(() => {
     const sortParam = searchParams.get('sort') as SortValue | null;
     const validValues = sortOptions.map(o => o.value);
+
     if (!sortParam || !validValues.includes(sortParam)) {
       setSearchParams({
         ...Object.fromEntries(searchParams.entries()),

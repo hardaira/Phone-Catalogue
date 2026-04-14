@@ -4,7 +4,6 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
 
-
 interface PaginationControlsProps {
   currentPage: number;
   totalPages: number;
@@ -39,9 +38,7 @@ export const PaginationControls: React.FC<PaginationControlsProps> = ({
         page: '1',
       });
     }
-
-  }, [searchParams, setSearchParams ]);
-
+  }, [searchParams, setSearchParams]);
 
   return (
     <div className="pagination__controls">
@@ -55,6 +52,7 @@ export const PaginationControls: React.FC<PaginationControlsProps> = ({
 
       {Array.from({ length: totalPages }, (_, i) => {
         const pageNumber = i + 1;
+
         return (
           <button
             key={pageNumber}

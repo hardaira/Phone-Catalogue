@@ -45,7 +45,6 @@ export const SliderTop: React.FC = () => {
   }, []);
 
   return (
-
     <>
       <p className="invitation"> Welcome to Nice Gadgets store!</p>
       <section>

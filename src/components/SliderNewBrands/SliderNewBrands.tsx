@@ -26,7 +26,11 @@ export const SliderNewBrands: React.FC = () => {
   const cardRef = useRef(null);
 
   const newBrandsSlides = sortedNewBrands.map((product, index) => (
-    <div key={product.id} className ="carousel__slide" ref={index === 0 ? cardRef : null}>
+    <div
+      key={product.id}
+      className="carousel__slide"
+      ref={index === 0 ? cardRef : null}
+    >
       <ProductCard {...product} />
     </div>
   ));

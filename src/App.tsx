@@ -7,7 +7,7 @@ export const App = () => (
     <Navbar />
     <div>
       <Outlet />
-    </div> 
+    </div>
     <Footer />
   </div>
 );
