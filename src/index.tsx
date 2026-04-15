@@ -20,6 +20,8 @@ import { FavoritesPage } from './pages/FavoritesPage';
 import { CartPage } from './pages/CartPage';
 import { ProductInformationPage } from './pages/ProductInformationPage';
 import ScrollToTop from './components/ScrollToTop';
+import { ContactsPage } from './pages/ContactsPage';
+import { RightsPage } from './pages/RightsPage';
 
 createRoot(document.getElementById('root') as HTMLDivElement).render(
   <Provider store={store}>
@@ -43,6 +45,8 @@ createRoot(document.getElementById('root') as HTMLDivElement).render(
           </Route>
           <Route path="favorites" element={<FavoritesPage />} />
           <Route path="cart" element={<CartPage />} />
+          <Route path="rights" element={<RightsPage />} />
+          <Route path="contacts" element={<ContactsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

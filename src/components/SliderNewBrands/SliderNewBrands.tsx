@@ -50,16 +50,19 @@ export const SliderNewBrands: React.FC = () => {
     }
   };
 
+  const isFirst = currentIndex === 0;
+  const isLast = currentIndex + visibleCount >= newBrandsSlides.length;
+
   return (
     <section>
       <div className="carousel">
         <div className="slider__heading">
           <h2 className="text_above_slider">Brand new models</h2>
           <div className="arrows">
-            <button className="arrow arrowPrev" onClick={previousOne}>
+            <button className="arrow arrowPrev" disabled={isFirst} onClick={previousOne}>
               <IoIosArrowBack />
             </button>
-            <button className="arrow arrowNext" onClick={nextOne}>
+            <button className="arrow arrowNext" disabled={isLast} onClick={nextOne}>
               <IoIosArrowForward />
             </button>
           </div>

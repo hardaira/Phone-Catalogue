@@ -1,16 +1,7 @@
-# React TypeScript Starter Pack
-
-To use this template click `Use this template`
-
-### Available Scripts
 
 `Deploy` - available to deploy your application to gh-pages, to deploy the project, change the second line of code in package.json, specifically the homepage value, from "." to the repository name
 
-`SCSS Preprocessor` - available to write your styles with modern style language
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://hardaira.github.io/Phone-Catalogue/)
-
-# Base layout template with Gulp, SCSS and Stylelint
+# roject description
 1.'Phone Catalogue' is an online store offering its customers a wide range of mobile phones, tablets and accessories.
 
 2. Live preview available at:

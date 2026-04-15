@@ -1,0 +1,15 @@
+.contact_links {
+  display: flex;
+  align-items: center;
+  gap: 5px;  
+  margin-top: 20px;
+  
+}
+
+.contact_link {
+  font-size: 16px;
+}
+
+.contact_link:hover {
+  color: black;
+}
