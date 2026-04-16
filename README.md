@@ -14,11 +14,16 @@
 
 The project is built using modern frontend technologies:
 
+Core:
 - React – a JavaScript library for building dynamic and interactive user interfaces using components.
 - TypeScript – a strongly typed superset of JavaScript that improves code reliability and maintainability.
 - SCSS – a CSS preprocessor that adds variables, nesting, and reusable styles for more efficient styling.
+
+Routing &State:
 - Redux – a state management library used to manage and centralize application state.
 - React Router – a routing library for React that enables navigation between different views in a single-page application.
+
+Development & Build:
 - Node.js – a JavaScript runtime environment used to run development tools and manage the project locally.
 - npm – a package manager for JavaScript used to install, update, and manage project dependencies.
 
